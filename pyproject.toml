@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compressor-app"
+version = "1.0.0"
+description = "A desktop application for comparing classic text compression algorithms"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.gui-scripts]
+compressor = "compressor.app:main"
+
+[tool.setuptools.packages.find]
+include = ["compressor*"]
